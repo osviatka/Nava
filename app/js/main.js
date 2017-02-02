@@ -15,6 +15,14 @@ $(function() {
 			$(".btn-item-featured").fadeOut('slow');
 		}
 	});
+	$('#exampleModalLong').on('show.bs.modal', function (event) {
+		var button = $(event.relatedTarget),
+			headingText = button.data('heading'),
+			countryText = button.data('country'),
+			modal = $(this);
+		modal.find('.modal-head').text(headingText);
+		modal.find('.country').text(countryText);
+	});
 
 });
 
@@ -25,5 +33,6 @@ jQuery(function () {
 	$( "#autoComplete" ).autocomplete({
 		lookup: availableTags,
 		lookupLimit: 5
-	});});
+	});
+});
 
