@@ -78,7 +78,8 @@ nav {
     bottom: 0;
     background: rgba(85, 85, 85, .6);
   }
-  video {
+  video,
+  .img-poster{
     position: absolute;
     min-height: 100%;
     min-width: 100%;
