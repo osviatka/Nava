@@ -122,6 +122,18 @@ nav {
       }
     }
   }
+  @media screen and (max-width: 767px) {
+    .head {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    .sub-head {
+      font-size: 17px;
+    }
+    video{
+      display: none;
+    }
+  }
 }
 
 .autocomplete-suggestions {
